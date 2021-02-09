@@ -5,6 +5,8 @@ The site hosted user-created edits of video game soundtracks, encoded in their n
 
 This script allowed me to quickly download as many songs as I could in a .bcstm format before the site was ultimately taken down.
 
+(As of 2021, the site is now smashcustommusic.net, and while currently operational, operates on heavily limited bandwidth and is constantly under threat of death by Copyright Law)
+
 # Download
 There is only one file: scraper.py
 
