@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 EXCLUSION = ['Random', 'Games', 'Switch Theme', 'Log In', 'About', 'Donate', 'Contact', 'Tools', 'Tweet', 'Buy this Game', 'Buy the official music album', 'Preferences']
 RESERVED_CHARS = ['/', '\\', '?', '%', '*', ':', '|', '"', '<', '>', '\t']
 DOWNLOAD_BUFFER = 15
-BASE_DOWNLOAD_URL = "https://smashcustommusic.net/bcstm/"
+BASE_DOWNLOAD_URL = "https://smashcustommusic.net/brstm/"
 
 
 
@@ -18,14 +18,14 @@ def recursiveScrape(index: int):
         recursiveScrape(index + 1)
     else:
         href = entries[index]['href'][6:];
-        fileName = entries[index].get_text() + '.bcstm';
+        fileName = entries[index].get_text() + '.brstm';
         for char in RESERVED_CHARS:
             fileName = fileName.replace(char, '_');
 
         print(f'Downloading {fileName}... ', end='');
         try:
             page = urllib.request.urlretrieve(BASE_DOWNLOAD_URL+href, downloadLocation+'/'+fileName);
-            print("Done. Waiting...");
+            print("Done. Continuing in ", DOWNLOAD_BUFFER, " seconds...");
             time.sleep(DOWNLOAD_BUFFER);
             recursiveScrape(index + 1);
         except urllib.error.HTTPError as e:
