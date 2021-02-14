@@ -5,7 +5,7 @@ The site hosts user-created edits of video game soundtracks, encoded in their na
 
 This script allowed me to quickly download as many songs as I could before the site was ultimately taken down at the time.
 
-(As of 2021, the site is currently operational under the URL [smashcustommusic.net](www.smashcustommusic.net). It is unknown to me whether or not the site may stay, or for how long, given the nature of Nintendo and previous examples of their interactions with music, content creation, Copyright law, etc. Hopefully it stays :) )
+(As of 2021, the site is currently operational under the URL [smashcustommusic.net](http://www.smashcustommusic.net). It is unknown to me whether or not the site may stay, or for how long, given the nature of Nintendo and previous examples of their interactions with music, content creation, Copyright law, etc. Hopefully it stays :) )
 
 # Download
 There is only one file: scraper.py
